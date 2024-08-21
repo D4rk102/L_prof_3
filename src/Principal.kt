@@ -12,17 +12,16 @@ fun main(){
     println((Cuadrado1.cuadrado()))
     */
     fun main(){
-        val listaOperaciones = mutableListOf<operacionesClase>()
+        val listaOperaciones = mutableListOf<Constructor>()
 
-        listaOperaciones.add(operacionesClase(21.32, 47.2))
+        listaOperaciones.add(Constructor(21.32, 47.2))
 
         listaOperaciones.forEach { operacion ->
-            val resultadoSuma = operacion.suma()
-            val resltadoDivision = operacion.division()
-            println(resltadoDivision)
-            val resultadoMitad = operacion.mitad(50)
-            val resultadoCuadrado = operacion.cuadrado(10.3)
-            println(resultadoCuadrado)
+            val Suma1 = operacion.suma()
+            val Division1 = operacion.division()
+            println(Division1)
+            val Cuadrado1 = operacion.cuadrado()
+            println(Cuadrado1)
 
         }
     }

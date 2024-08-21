@@ -23,4 +23,9 @@ class Constructor(var n1:Double, var n2:Double){
         return "El cuadrado es: ${Math.pow(n1,n2)}"
     }
 
+    override fun toString(): String {
+        return "Constructor(n1=$n1, n2=$n2)"
+    }
+
+
 }
